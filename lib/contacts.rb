@@ -19,7 +19,7 @@ require 'pry'
       if person == "Freddy Mercury"
         attributes.each do |attribute, value|
           if attribute == :favorite_ice_cream_flavors
-            value.reject! {|flavor| flavor == "strawberry"}
+            value.delete_if {|flavor| flavor == "strawberry"}
           end
       end
       end
